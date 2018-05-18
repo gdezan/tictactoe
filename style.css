@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	text-align: center;
+	background-color: #ECECEB;
+}
+
+.page-title {
+	margin: 40px;
+}
+
+.frame {
+	display: inline-block;
+	background-color: #6ed17d;
+	padding: 20px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.8);
+	color: white;
+}
+
+.game {
+	display: grid;
+	grid-template-columns: repeat(3, 150px);
+	grid-template-rows: repeat(3, 150px);
+}
+
+.slot {
+	line-height: 150px;
+	font-size: 50px;
+}
+
+.piece {
+	transition: transform 0.3s;
+	transition-timing-function: cubic-bezier(0,1.11,.43,1.2);
+	transform: scale(0);
+}
+
+
+.middle {
+	border-bottom: 3px solid white;
+	border-top: 3px solid white;
+}
+
+.center {
+	border-left: 3px solid white;
+	border-right: 3px solid white;
+}
