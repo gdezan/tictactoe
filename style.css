@@ -18,6 +18,14 @@ h1 {
     margin: 40px;
 }
 
+footer {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
 .game-board {
     display: inline-block;
 }
