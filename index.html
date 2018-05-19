@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Tic-Tac-Toe</title>
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 </head>
+
 <body>
 	<h1 class="page-title">Tic-Tac-Toe</h1>
-	<div class="frame">
-		<div class="game">
-			<div class="slot"><p class="piece"></p></div>
-			<div class="slot center"><p class="piece"></p></div>
-			<div class="slot"><p class="piece"></p></div>
-			<div class="slot middle"><p class="piece"></p></div>
-			<div class="slot middle center"><p class="piece"></p></div>
-			<div class="slot middle"><p class="piece"></p></div>
-			<div class="slot"><p class="piece"></p></div>
-			<div class="slot center"><p class="piece"></p></div>
-			<div class="slot"><p class="piece"></p></div>
+	<div class="game-board">
+		<div class="piece-options">
+			<div class="piece-btn buttonX">X</div>
+			<div class="piece-btn buttonO">O</div>
+		</div>
+		<div class="frame">
+			<div class="game">
+				<div class="cover"></div>
+				<div class="slot">
+					<p class="mark"></p>
+				</div>
+				<div class="slot center">
+					<p class="mark"></p>
+				</div>
+				<div class="slot">
+					<p class="mark"></p>
+				</div>
+				<div class="slot middle">
+					<p class="mark"></p>
+				</div>
+				<div class="slot middle center">
+					<p class="mark"></p>
+				</div>
+				<div class="slot middle">
+					<p class="mark"></p>
+				</div>
+				<div class="slot">
+					<p class="mark"></p>
+				</div>
+				<div class="slot center">
+					<p class="mark"></p>
+				</div>
+				<div class="slot">
+					<p class="mark"></p>
+				</div>
+			</div>
+		</div>
+		<div class="game-type">
+			<div class="piece-btn single player">Single-Player</div>
+			<div class="piece-btn multi player">Multiplayer</div>
 		</div>
 	</div>
 	<script src="script.js"></script>
 </body>
+
 </html>

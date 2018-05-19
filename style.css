@@ -7,18 +7,60 @@
 html {
 	text-align: center;
 	background-color: #ECECEB;
+	font-family: 'Varela Round', sans-serif;
+}
+
+h1 {
+	font-size: 60px;
 }
 
 .page-title {
 	margin: 40px;
 }
 
+.game-board {
+	display: inline-block;
+}
+
 .frame {
 	display: inline-block;
 	background-color: #6ed17d;
 	padding: 20px;
-	box-shadow: 0 3px 5px rgba(0,0,0,0.8);
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
 	color: white;
+}
+
+.piece-options {
+	position: absolute;
+	line-height: 50px;
+	left: 50%;
+	transform: translateX(-50%) scale(0);
+	top: 400px;
+	z-index: 2;
+	transition: transform 0.3s;
+	transition-timing-function: cubic-bezier(0, 1.11, .43, 1.2);
+}
+
+.cover {
+	position: absolute;
+	background-color: #1d5525dc;
+	width: 490px;
+	height: 490px;
+	z-index: 1;
+	transform: translate(-20px, -20px) scale(0);
+	transition: transform 0.2s;
+	transition-timing-function: cubic-bezier(0, 1.11, .43, 1.2);
+}
+
+.game-type {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) scale(0);
+	top: 300px;
+	z-index: 2;
+	transition: transform 0.32s;
+	transition-timing-function: cubic-bezier(0, 1.11, .43, 1.2);
+	white-space: nowrap;
 }
 
 .game {
@@ -29,22 +71,80 @@ html {
 
 .slot {
 	line-height: 150px;
-	font-size: 50px;
+	font-size: 80px;
+	/* To make text unselectable */
+	-webkit-user-select: none;
+	/* Safari */
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* IE10+/Edge */
+	user-select: none;
+	/* Standard */
+	/*  */
 }
 
-.piece {
+.mark {
 	transition: transform 0.3s;
-	transition-timing-function: cubic-bezier(0,1.11,.43,1.2);
+	transition-timing-function: cubic-bezier(0, 1.11, .43, 1.2);
 	transform: scale(0);
 }
 
-
 .middle {
-	border-bottom: 3px solid white;
-	border-top: 3px solid white;
+	border-bottom: 5px solid white;
+	border-top: 5px solid white;
 }
 
 .center {
-	border-left: 3px solid white;
-	border-right: 3px solid white;
+	border-left: 5px solid white;
+	border-right: 5px solid white;
+}
+
+.piece-btn {
+	background-color: #6ed17d;
+	display: inline-block;
+	font-size: 25px;
+	color: white;
+	margin: 15px;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
+	transition: background-color 0.3s;
+	/* To make text unselectable */
+	-webkit-user-select: none;
+	/* Safari */
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* IE10+/Edge */
+	user-select: none;
+	/* Standard */
+	/*  */
+}
+
+.buttonX {
+	width: 50px;
+	height: 50px;
+}
+
+.buttonO {
+	width: 50px;
+	height: 50px;
+}
+
+.player {
+	padding: 10px 15px;
+	font-size: 20px;
+}
+
+.piece-btn:hover {
+	background-color: #35f852;
+	cursor: pointer;
+}
+
+.piece-btn:active {
+	transform: translateY(3px);
+	box-shadow: none;
+}
+
+.multiplayer {
+	background-color: #6ed17d
 }
