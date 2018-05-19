@@ -96,12 +96,15 @@ h1 {
     user-select: none;
     /* Standard */
     /*  */
+    
 }
 
 .mark {
-    transition: transform 0.3s;
-    transition-timing-function: cubic-bezier(0, 1.11, 0.43, 1.2);
+    color: white;
     transform: scale(0);
+    transition: transform 0.3s, color 0.3s;
+    transition-timing-function: cubic-bezier(0, 1.11, 0.43, 1.2);
+    
 }
 
 .middle {
@@ -132,6 +135,37 @@ h1 {
     user-select: none;
     /* Standard */
     /*  */
+}
+
+.restart {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    top: 500px;
+    z-index: 3;
+    transition: transform 0.32s;
+    transition-timing-function: cubic-bezier(0, 1.11, 0.43, 1.2);
+}
+
+.restart > .piece-btn {
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.end-message {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    top: 300px;
+    z-index: 4;
+    transition: transform 0.32s;
+    transition-timing-function: cubic-bezier(0, 1.11, 0.43, 1.2);
+    white-space: nowrap;
+}
+
+.end-message > .piece-btn {
+    padding: 10px 15px;
+    font-size: 50px;
 }
 
 .buttonX {
